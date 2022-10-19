@@ -8,6 +8,7 @@ import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 const addRoute:Routes=[
   {
@@ -29,7 +30,8 @@ const addRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(addRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
