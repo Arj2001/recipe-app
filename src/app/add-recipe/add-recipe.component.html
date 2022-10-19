@@ -1,0 +1,32 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+               <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <label for="" class="label-control">Recipe Name</label>
+                    <input type="text" class="form-control" name="recipe_name" [(ngModel)]="recipe_name">
+               </div>
+               <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <label for="" class="label-control">Ingredients</label>
+                    <input type="text" class="form-control" name="ingredients" [(ngModel)]="ingredients">
+               </div>
+               <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <label for="" class="label-control">Category</label>
+                    <select name="" id="" class="form-control" name="category" [(ngModel)]="category">
+                        <option value="">Veg</option>
+                        <option value="">Non Veg</option>
+                        <option value="">Egg</option>
+                    </select>
+               </div>
+               <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <label for="" class="label-control">Duration</label>
+                    <input type="text" class="form-control" name="duration" [(ngModel)]="duration">
+               </div>
+               <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                    <button class="btn btn-secondary" (click)="readValues()">Submit</button>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
